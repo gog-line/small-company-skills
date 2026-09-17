@@ -189,7 +189,7 @@ the author, on the raw records rather than on a summary.
 node scripts/skills.mjs check      # structure, portability, category ids, protocol drift
 node scripts/skills.mjs sync       # regenerate the shared protocol block in every SKILL.md
 node scripts/skills.mjs table      # the roles table above
-node --test scripts/               # 25 validator tests + 14 input-gate tests
+node --test scripts/*.test.mjs     # 25 validator tests + 14 input-gate tests
 ```
 
 The shared behavioural protocol lives once, in `skills/_shared/protocol.md`, and is generated into every
@@ -198,6 +198,14 @@ eye. `tests/skills-behaviour/` holds the cases and the runner that check what a 
 an input is missing — see its README.
 
 Requires Node.js 22 or newer. No dependencies.
+
+Every push runs the same checks in CI (`.github/workflows/check.yml`), including one the local commands
+do not make obvious: it runs `sync` and then fails if anything changed, which catches a protocol block
+edited by hand instead of generated.
+
+The skills follow the [Agent Skills](https://agentskills.io) format: a folder with a `SKILL.md` whose
+frontmatter carries `name` and `description`. Nothing host-specific lives in this repository, so the
+same folders work outside Claude Code.
 
 ## Licence
 
