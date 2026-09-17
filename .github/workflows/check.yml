@@ -1,0 +1,30 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Struktura i przenośność każdego skilla: pola frontmattera spoza przenośnego podzbioru,
+      # składnia spoza obsługiwanego YAML-a, ID kategorii, dryf wspólnego protokołu.
+      - name: skills check
+        run: node scripts/skills.mjs check
+
+      # Bloki protokołu mają być GENEROWANE. Jeśli sync cokolwiek zmienia, znaczy że ktoś
+      # edytował kopię ręcznie i repozytorium nie jest w stanie, w jakim deklaruje.
+      - name: protocol blocks are generated, not hand-edited
+        run: |
+          node scripts/skills.mjs sync
+          git diff --exit-code -- skills
+
+      - name: tests
+        run: node --test scripts/*.test.mjs
