@@ -1,0 +1,28 @@
+diff --git a/src/filter.js b/src/filter.js
+new file mode 100644
+--- /dev/null
++++ b/src/filter.js
+@@ -0,0 +1,6 @@
++export class InvalidStatus extends Error {}
++
++export function filterRecords(records, status) {
++  if (!status) return records;
++  return records.filter((r) => r.status === status);
++}
+diff --git a/test/filter.test.js b/test/filter.test.js
+new file mode 100644
+--- /dev/null
++++ b/test/filter.test.js
+@@ -0,0 +1,12 @@
++import { test } from 'node:test';
++import assert from 'node:assert/strict';
++import { filterRecords } from '../src/filter.js';
++
++const records = [{ id: 1, status: 'open' }, { id: 2, status: 'closed' }];
++
++test('open only', () => {
++  assert.deepEqual(filterRecords(records, 'open'), [{ id: 1, status: 'open' }]);
++});
++test('no status returns all', () => {
++  assert.equal(filterRecords(records).length, 2);
++});

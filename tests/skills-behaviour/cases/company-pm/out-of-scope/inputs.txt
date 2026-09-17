@@ -1,0 +1,2 @@
+# what this case deliberately gives the run
+project.md — the project goal, criteria, budget and tasks

@@ -1,0 +1,2 @@
+# what this case deliberately gives the run; there is no portfolio record and no installation profile
+notes.md — an owner's note saying nothing has been written down yet

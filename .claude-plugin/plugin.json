@@ -1,0 +1,19 @@
+{
+  "name": "small-company-skills",
+  "version": "0.1.0",
+  "description": "Thirteen agent skills for running work like a small software company: CTO, PM, architect, developers, QA, review, security, design, operations. Closed role scopes, explicit inputs, and refusals that name the right owner.",
+  "author": {
+    "name": "gog-line"
+  },
+  "repository": "https://github.com/gog-line/small-company-skills",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "engineering",
+    "project-management",
+    "code-review",
+    "qa",
+    "security",
+    "roles"
+  ]
+}

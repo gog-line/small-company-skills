@@ -1,0 +1,6 @@
+$ node --test test/
+✔ open only (0.6ms)
+✔ no status returns all (0.1ms)
+ℹ tests 2
+ℹ pass 2
+ℹ fail 0

@@ -1,0 +1,3 @@
+# what this case deliberately gives the run
+assets.md — the asset and data-flow brief
+scope.md — the explicitly authorised assessment scope

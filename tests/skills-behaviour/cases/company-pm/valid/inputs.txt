@@ -1,0 +1,3 @@
+# what this case deliberately gives the run
+project.md — the project goal, criteria, budget and tasks
+backlog.md — the same tasks seen from the backlog side

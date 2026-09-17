@@ -1,0 +1,4 @@
+# what this case deliberately gives the run; the authors' identity is withheld, the file name must not say so
+package.md — the frozen package, without the authors' identity
+diff.patch — the change under review, with the deliberate AC3 defect
+test-output.txt — the developer's test run, 2 of 3 criteria covered

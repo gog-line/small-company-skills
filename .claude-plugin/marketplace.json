@@ -1,0 +1,17 @@
+{
+  "name": "small-company-skills",
+  "owner": {
+    "name": "gog-line",
+    "url": "https://github.com/gog-line"
+  },
+  "description": "Small Company Skills as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "small-company-skills",
+      "source": "./",
+      "description": "Thirteen agent roles of a small software company, with closed scopes and explicit refusals.",
+      "category": "engineering",
+      "keywords": ["engineering", "roles", "code-review", "qa", "security"]
+    }
+  ]
+}

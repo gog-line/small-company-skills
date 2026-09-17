@@ -1,0 +1,2 @@
+# what this case deliberately gives the run; the authorised assessment scope is withheld
+assets.md — the asset and data-flow brief

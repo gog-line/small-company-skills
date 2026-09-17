@@ -1,0 +1,2 @@
+# what this case deliberately gives the run; the write boundary is withheld
+catalogue.md — a snapshot of the model catalogue with its date

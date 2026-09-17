@@ -1,0 +1,2 @@
+# what this case deliberately gives the run
+portfolio.md — the portfolio record with budgets, usage and a waiting escalation

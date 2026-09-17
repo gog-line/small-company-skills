@@ -1,0 +1,2 @@
+# what this case deliberately gives the run; the project goal is withheld and no file may carry it
+backlog.md — task ids, titles and states, with no goal and no criteria
