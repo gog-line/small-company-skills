@@ -1,5 +1,7 @@
 # Small Company Skills
 
+[![skills.sh](https://skills.sh/b/gog-line/small-company-skills)](https://skills.sh/gog-line/small-company-skills)
+
 Thirteen agent skills that turn one model into a small software company: a CTO, a PM, an architect,
 developers, QA, review, security, design, operations. Each role has a closed scope of five action
 categories, states what it needs, and **refuses what is not its own** — naming whose it is.
